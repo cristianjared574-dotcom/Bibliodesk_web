@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiblioDesk | Acceso del personal</title>
+</head>
+<body>
+
+    <header>
+        <h1>BiblioDesk</h1>
+        <p>Sistema de gestión bibliotecaria</p>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="login.html">Acceso del personal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Acceso del personal</h2>
+            <p>Ingresa tu usuario y contraseña.</p>
+
+            <!-- Este archivo PHP se creará en la etapa del backend -->
+            <form action="login.php" method="post">
+
+                <div>
+                    <label for="usuario">Usuario:</label>
+                    <input
+                        type="text"
+                        id="usuario"
+                        name="usuario"
+                        autocomplete="username"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label for="contrasena">Contraseña:</label>
+                    <input
+                        type="password"
+                        id="contrasena"
+                        name="contrasena"
+                        autocomplete="current-password"
+                        required
+                    >
+                </div>
+
+                <button type="submit">Iniciar sesión</button>
+            </form>
+
+            <p>Acceso exclusivo para personal autorizado.</p>
+            <a href="index.html">Volver al inicio</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>BiblioDesk — Proyecto académico</p>
+        <p>Contacto: información pendiente de agregar.</p>
+    </footer>
+
+</body>
+</html>

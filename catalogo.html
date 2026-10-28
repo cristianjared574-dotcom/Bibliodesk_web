@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BiblioDesk | Catálogo</title>
+</head>
+<body>
+
+    <header>
+        <h1>BiblioDesk</h1>
+        <p>Sistema de gestión bibliotecaria</p>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="login.html">Acceso del personal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Catálogo de libros</h2>
+            <p>Consulta los libros de nuestra biblioteca.</p>
+
+            <!-- Más adelante conectaremos este formulario con PHP -->
+            <form action="catalogo.html" method="get">
+                <label for="busqueda">Buscar por título, autor o categoría:</label>
+
+                <input
+                    type="search"
+                    id="busqueda"
+                    name="busqueda"
+                    placeholder="Escribe tu búsqueda"
+                >
+
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Libros del catálogo</h2>
+            <p>Datos de ejemplo para diseñar la página.</p>
+
+            <article>
+                <h3>El principito</h3>
+                <p><strong>Autor:</strong> Antoine de Saint-Exupéry</p>
+                <p><strong>Categoría:</strong> Literatura</p>
+                <p><strong>Ejemplares disponibles:</strong> 3</p>
+
+                <a href="libro.html">Ver detalles</a>
+            </article>
+
+            <article>
+                <h3>Don Quijote de la Mancha</h3>
+                <p><strong>Autor:</strong> Miguel de Cervantes</p>
+                <p><strong>Categoría:</strong> Novela</p>
+                <p><strong>Ejemplares disponibles:</strong> 0</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>BiblioDesk — Proyecto académico</p>
+        <p>Contacto: información pendiente de agregar.</p>
+    </footer>
+
+</body>
+</html>
